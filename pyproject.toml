@@ -1,0 +1,29 @@
+[project]
+name = "workos"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ridwanul Hasan"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.124.4,<0.125.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "pydantic-settings (>=2.12.0,<3.0.0)",
+    "structlog (>=25.5.0,<26.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=25.12.0,<26.0.0)",
+    "ruff (>=0.14.9,<0.15.0)",
+    "pytest (>=9.0.2,<10.0.0)"
+]
